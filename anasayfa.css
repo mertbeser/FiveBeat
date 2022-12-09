@@ -1,0 +1,98 @@
+<style>
+
+a:link {
+  color: white;
+  
+}
+a:visited {
+  color: red;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:gray;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(92, 38, 19);
+  }
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20;
+  }
+  
+
+.navbar a.right {
+    float: right;  
+}
+
+body {
+    background-color: rgb(40, 34, 34);
+}
+
+div.a {
+    text-align: center;
+}
+
+div.text {
+  color: rgb(128, 124, 124);
+  font-size: 30px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1000px;
+}
+
+.neon
+{
+    display:inline-flex;
+    filter:brightness(300%);
+    overflow: hidden;
+}
+
+.metin
+{
+    color:white;
+    font-size: 55px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    padding: 10px;
+    background: black;
+}
+
+.metin::before
+{
+    content:attr(data-metin);
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(2px);
+}
+
+.renk{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: radial-gradient(circle,grey,rgb(74, 52, 11),grey,rgb(105, 13, 13));
+    mix-blend-mode: multiply;
+}
+
+
+.parilti
+{
+    position: absolute;
+    width:200%;
+    height:200%;
+    background: radial-gradient(circle,white,black 55%) center/5% 33%;
+    animation: animasyon 10s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes animasyon{
+    from {transform:translate(-50%,-50%);}
+    to {transform:translate(0%,0%);}
+}
+</style>

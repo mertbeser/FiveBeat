@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link href="giris.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="logo.PNG"/>
+
+</head>
+</html>
+<body>
+
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">GİRİŞ YAP</button>
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="logo.PNG" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>E-Posta</b></label>
+          <input type="text" placeholder="E-Posta Adresiniz" name="uname" required>
+    
+          <label for="psw"><b>Şifreniz</b></label>
+          <input type="password" placeholder="Şifreniz" name="psw" required>
+            
+          <button type="submit">GİRİŞ YAP</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Beni hatırla
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">VAZGEÇ</button>
+          <span class="psw"> <a href="#">Şifremi Unuttum</a></span>
+        </div>
+      </form>
+    </div>
+    
+</body>

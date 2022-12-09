@@ -1,0 +1,211 @@
+<html>
+<head> 
+    <title>Kalori </title>
+    <link href="kalori.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/PNG" href="logo.PNG"/>
+    <div class="a"> <img src="logo.PNG" alt="Photography"style="margin-top:-10px;width:250px;height:100px;" ></div>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="anasayfa.html">Anasayfa</a>
+        <a href="kalori.html">Kalori</a>
+        <a href="protein.html">Protein</a>
+        <a href="yemektarifi.html">Beslenme Programı</a>
+        <a href="sporprogrami.html">Spor Programı</a>
+        <a href="takviyeler.html">Takviyeler</a>
+        <a href="kayit.html" class="right" style="color:green;">Kayıt Ol</a>
+        <a href="giris.html" class="right">Giriş Yap</a>
+        </div>
+
+        <body>
+          <div class="container-fluid text-center">
+            <div class="row" id="header"> 
+                <img style="height:300px; margin-left :370px;" src="mert.jpg">
+              <h1 style="color: rgb(157, 154, 154);" id="title">Kalori Hesaplama</h1>
+              <h4 id="main-menu"> 
+              </h4>
+            </div>
+            
+              <div class="row part1" id="BMR">
+                <h3 style="color: green;">Kalori</h3>
+                <p style="color: white;">Kalori vücudumuzdaki tüm vücut fonksiyonlarını sürdürmek için günlük olarak ihtiyaç duyulan toplam enerji (kalori) miktarıdır. Fiziksel aktivite içermez.</div> <!-- end: row 1-->
+            
+              <div class="row part1 paddingTopBottom60px">
+                <h3 style="color: white;">İhtiyaç Duyulan Kalori</h3>
+                <form class="CalculateForm" method="post">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <div class="row g-5">
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h5 style="color: white;">Yaş*</h5>
+                                        <input class="form-control text-end" name="age" required="" type="number" value="25" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h5 style="color: white;">Cinsiyet*</h5>
+                                        <div class="form-control">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <input checked="" id="gender_male" name="gender" required="" type="radio" value="0" />
+                                                    <label style="color: white;" class="ms-2">Erkek</label>
+                                                </div>
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <input id="gender_female" name="gender" required="" type="radio" value="1" />
+                                                    <label style="color: white;" class="ms-2">Kadın</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h5 style="color: white;">Yağ Oranı*</h5>
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control text-end" name="bodyFat" required="" type="number" value="20" />
+                                            <span class="btn ms-1 bg-warning">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h5 style="color: white;">Uzunluk*</h5>
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control text-end" name="height" required="" type="number" value="180" />
+                                            <span class="btn ms-1 bg-warning text-nowrap">cm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h5 style="color: white;">Ağırlık*</h5>
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control text-end" name="weight" required="" type="number" value="65" />
+                                            <span class="btn ms-1 bg-warning text-nowrap">kg</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 style="color: white;">Aktivite*</h5>
+                                    <select class="form-select" name="activity" required="">
+                                        <option value="1">Doğrudan Alınması Gereken Kalori</option>
+                                        <option value="1.2">Az egzersiz veya hiç egzersiz</option>
+                                        <option value="1.375">Hafif: haftada 1-3 kez egzersiz</option>
+                                        <option selected="" value="1.465">Orta: haftada 4-5 kez egzersiz</option>
+                                        <option value="1.55">Aktif: günlük egzersiz veya haftada 3-4 kez yoğun egzersiz</option>
+                                        <option value="1.725">Çok Aktif: Haftada 6-7 kez yoğun egzersiz</option>
+                                        <option value="1.9">Ekstra Aktif: günlük çok yoğun egzersiz veya fiziksel iş</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h5 style="color: white;">Sonuç*</h5>
+                                        <div class="form-control">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <input checked="" id="unit_calories" name="unit" required="" type="radio" value="Calories" />
+                                                    <label style="color: white;" class="ms-2">Kalori</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h5 style="color: white;">Hedef*</h5>
+                                        <div class="row g-3">
+                                            <div class="col-sm-12 d-flex align-items-center">
+                                                <input checked="" id="Mifflin_St_Jeor" name="formula" required="" type="radio" value="0" />
+                                                <label style="color: white;" class="ms-2">Kilo korumak</label>
+                                            </div>
+                                            <div class="col-sm-12 d-flex align-items-center">
+                                                <input id="Revised_Harris_Benedict" name="formula" required="" type="radio" value="1" />
+                                                <label style="color: white;" class="ms-2">Kilo almak</label>
+                                            </div>
+                                            <div class="col-sm-12 d-flex align-items-center">
+                                                <input id="Katch_McArdle" name="formula" required="" type="radio" value="2" />
+                                                <label style="color: white;"class="ms-2">Kilo vermek</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ans_calculate"></div>
+                        <div class="text-center mt-4 card-footer">
+                            <button class="btn btn-success" onclick="calculateCalorie(this)" type="button">
+                                <i class="fas fa-calculator me-3"></i>
+                                Hesapla
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    function calculateCalorie(obj)
+                    {
+                        const age = obj.form.age.value;
+                        const gender = obj.form.gender.value;
+                        const bodyFat = obj.form.bodyFat.value;
+                        const height = obj.form.height.value;
+                        const weight = obj.form.weight.value;
+                        const activity = obj.form.activity.value;
+                        const unit = obj.form.unit.value;
+                        const formula = obj.form.formula.value;
+    
+                        let BMR = '';
+                        if(formula == 0)
+                        {
+                            BMR = Mifflin(gender, age, bodyFat, height, weight);
+                        }
+                        else if(formula == 1)
+                        {
+                            BMR = Harris(gender, age, bodyFat, height, weight);
+                        }
+                        else if(formula == 2)
+                        {
+                            BMR = Katch(bodyFat, weight);
+                        }
+    
+                        let ret = parseFloat(BMR)*parseFloat(activity);
+                        if(unit == 'kilojoules')
+                        {
+                            ret = (ret*4.1868);
+                        }
+    
+                        document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 style="color: white;" class="text-center form-control my-3 text-danger fs-4">You should take <span class="text-white">'+Math.ceil(ret)+' '+unit+'/day </span> of calorie to maintain your weight.</h4></div>';
+                    }
+    
+                    function Mifflin(gender, age, bodyFat, height, weight)
+                    {
+                        let BMR = (10*weight) + (6.25*height) - (5*age) + 5;
+                        if(gender == 1)
+                        {
+                            BMR = (10*weight) + (6.25*height) - (5*age) - 161;
+                        }
+    
+                        return BMR;
+                    }
+    
+                    function Harris(gender, age, bodyFat, height, weight)
+                    {
+                        let BMR = (13.397*weight) + (4.799*height) - (5.677*age) + 88.362;
+                        if(gender == 1)
+                        {
+                            BMR = (9.247*weight) + (3.098*height) - (4.330*age) + 447.593;
+                        }
+    
+                        return BMR;
+                    }
+    
+                    function Katch(bodyFat, weight)
+                    {
+                        let BMR = 370 + 21.6*(1 - (bodyFat/100))*weight;
+    
+                        return BMR;
+                    }
+                </script>
+                </body>
+</html>

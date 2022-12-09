@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link href="kayit.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/jpeg" href="logo.PNG"/>
+    </head>
+    <body>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">KAYIT OL</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>KAYIT OL</h1>
+      
+      <hr>
+      <label for="email"><b>E-Posta</b></label>
+      <input type="text" placeholder="E-Posta" name="email" required>
+
+      <label for="psw"><b>Şifreniz</b></label>
+      <input type="password" placeholder="Şifreniz" name="psw" required>
+
+      <label for="psw-repeat"><b>Şifreyi Tekrar Giriniz </b></label>
+      <input type="password" placeholder="Şifreyi Tekrar Giriniz" name="psw-repeat" required>
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">VAZGEÇ</button>
+        <button type="submit" class="signupbtn">KAYIT OL</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="kyt.js">
+</script>
+
+
+        </body>
+</html>

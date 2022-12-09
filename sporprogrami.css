@@ -1,0 +1,38 @@
+<style>
+    
+a:link {
+  color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:gray;
+  }
+
+  .navbar a:hover {
+    background-color: rgb(92, 38, 19);
+  }
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20;
+  }
+  
+.navbar a.right {
+    float: right;  
+}
+
+body {   
+background-color: rgb(40, 34, 34);
+}
+
+div.a {
+    text-align: center;
+}
+ 
+</style>
